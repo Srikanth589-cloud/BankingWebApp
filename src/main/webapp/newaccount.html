@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+@charset "UTF-8";
+body
+{
+	
+	margin:auto;
+	margin-top:30px;
+	/* width:600px; */
+	background-color: rgb(219, 227, 228);
+	padding:40px;
+	background-image: url('./images/newaccount.avif');
+background-repeat: no-repeat;
+/* background-position: center; */
+background-size: cover; 
+	
+	
+}
+label
+{
+	display:inline-block;
+	width:150px;
+}
+.btn
+{
+	margin-left:60px;
+}
+a
+{
+	color:white;
+	text-decoration:none;
+	padding:5px 10px;
+	transition:0.2s all;
+}
+form
+{
+	border:1px solid;
+	padding:20px;
+	margin:auto;
+	width:500px;
+	background-color: rgb(181, 234, 246);
+}
+
+h1
+{
+	background-color: rgb(208, 215, 216);
+	text-align:center;
+	border-radius:17px;
+	width:545px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+div
+{
+	display:flex;
+	justify-content:space-between;
+	background-color: rgb(18, 17, 18);
+	padding:15px;
+	gap:10px;
+	border:1px solid;
+}
+
+div a:hover
+{
+
+border-radius:7px;
+/* border:1px solid; */
+background-color: rgb(78, 80, 80);
+}
+
+span
+{
+font-size:12px;
+color:red;
+}
+</style>
+
+<link href="./CSS/newAccount.css" rel="stylesheet">
+<script>
+
+function check()
+{
+	var accno=document.acc.anum.value;
+	var Name=document.acc.name.value;
+	var Password=document.acc.psw.value;
+	var cpassword=document.acc.cpsw.value;
+	var amount=document.acc.amt.value;
+	var address=document.acc.address.value;
+	var mobile=document.acc.mobile.value;
+	
+	//var psd=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+	
+	if(accno=="")
+		{
+		document.getElementById("ano").innerHTML="*please enter your A/C number";
+		document.acc.anum.focus();
+		return false;
+		}
+	if(Name.length<1)
+		{
+		document.getElementById("nm").innerHTML="*please enter your name";
+		document.acc.name.focus();
+		return false;
+		}
+	/* if(Password.match(psd));
+		{
+		//document.acc.psw.focus();
+		return true;
+		} */
+		
+	/* if(!Password.match(psd))
+		{
+		document.getElementById("pass").innerHTML="*password must be atleast one lowercase,one uppercase,one digits";
+		return false;
+		} */
+		if(Password=="")
+			{
+			document.getElementById("pass").innerHTML="*please enter password";
+			document.acc.psw.focus();
+			return false;
+			}
+		
+		if(cpassword=="")
+		{
+		document.getElementById("cpass").innerHTML="*please enter confirm password";
+		document.acc.cpsw.focus();
+		return false;
+		}
+		
+	if(!Password.match(cpassword))
+		{
+		document.getElementById("cpass").innerHTML="*password cpass don't match";
+		document.acc.cpsw.focus();
+		return false;
+		}
+	if(!cpassword.match(Password))
+	{
+	document.getElementById("cpass").innerHTML="*password don't match";
+	document.acc.psw.focus();
+	return false;
+	}
+	
+	if(amount=="")
+	{
+	document.getElementById("bal").innerHTML="*please enter amount";
+	document.acc.amt.focus();
+	return false;
+	}
+	
+	if(address=="")
+	{
+	document.getElementById("add").innerHTML="*please enter your address";
+	document.acc.address.focus();
+	return false;
+	}
+	
+	if(mobile=="")
+	{
+	document.getElementById("mno").innerHTML="*please enter your number";
+	document.acc.mobile.focus();
+	return false;
+	}
+	else
+	{
+	return true;
+	}
+}
+</script>
+</head>
+<body>
+
+<!-- <div>
+<a href="home.html"><img src="./images/home.png" alt="image not loaded"  height="18" width="18"></a>
+<a href="newaccount.html">New Account</a>
+<a href="balance.html">Balance</a>
+<a href="deposit.html">Deposit</a>
+<a href="withdraw.html">Withdraw</a>
+<a href="transfer.html">Transfer</a>
+<a href="closeacc.html">Close A/C</a>
+<a href="activate.html">Activate A/C</a>
+<a href="about.html">AboutUS</a>
+</div> -->
+<h1>OPEN NEW ACCOUNT FORM</h1>
+<form action="NewAccount" name="acc" method="post" onsubmit="return check()">
+<label>Account Number:</label>
+<input type="text" name="anum">
+<span id="ano"></span><p></p>
+
+<label>Name:</label>
+<input type="text" name="name">
+<span id="nm"></span><p></p>
+
+<label>Password:</label>
+<input type="password" name="psw">
+<span id="pass"></span><p></p>
+
+<label>Confirm Password:</label>
+<input type="password" name="cpsw">
+<span id="cpass"></span><p></p>
+
+<label>Amount:</label>
+<input type="text" name="amt">
+<span id="bal"></span><p></p>
+
+<label>Address:</label>
+<input type="text" name="address">
+<span id="add"></span><p></p>
+
+<label>Mobile No:</label>
+<input type="text" name="mobile">
+<span id="mno"></span><p></p>
+
+<label></label>
+<input type="submit" value="Submit">
+<input class="btn" type="reset" value="Clear">
+</form>
+</body>
+</html>

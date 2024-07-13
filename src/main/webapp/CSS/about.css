@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.mainContainer
+{
+	display:flex;
+	justify-content:space-between;
+}
+.mainContainer div
+{
+	width:360px;
+	text-align:justify;
+	padding:10px;
+}
+span
+{
+	display:inline-block;
+	height:6px;
+	width:70px;
+	background-color: rgb(28, 209, 222);
+}
+
+.cust
+{
+	margin-top:80px;
+}
+.h
+{
+	text-align:center;
+	
+}
+.about
+{
+	display:flex;
+	justify-content:space-between;
+	background-color: rgb(18, 17, 18);
+	padding:20px;
+	gap:10px;
+	
+}
+a
+{
+	color:white;
+	text-decoration:none;
+}
+img
+{
+	margin-top:20px;
+	
+}
+.icon
+{
+	
+	margin-left:270px;
+}
+
+

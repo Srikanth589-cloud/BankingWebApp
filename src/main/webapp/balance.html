@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<<link href="./CSS/balanceD.css" rel="stylesheet">
+<style>
+@charset "UTF-8";
+body
+{
+	
+	/* margin:auto;
+	margin-top:30px;
+	width:600px;
+	background-color: rgb(227, 239, 197);
+	padding:40px;
+	border:1px solid;
+	background-image: url('./images/balance.jpg');
+*/
+background-image: url('./images/balance.jpg');
+background-repeat: no-repeat;
+/* background-position: center; */
+background-size: cover;
+height: 500px;
+}
+h1
+{
+	background-color: rgb(208, 215, 216);
+	text-align:center;
+	border-radius:17px;
+	width:545px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+div a:hover
+{
+
+border-radius:7px;
+/* border:1px solid; */
+background-color: rgb(78, 80, 80);
+}
+
+a
+{
+	color:white;
+	text-decoration:none;
+	padding:5px 10px;
+	transition:0.2s all;
+}
+label
+{
+	display:inline-block;
+	width:150px;
+}
+.btn
+{
+	margin-left:60px;
+}
+a
+{
+	text-decoration:none;
+	color:white;
+}
+form
+{
+	border:1px solid;
+	padding:20px;
+	margin:auto;
+	width:500px;
+	/* background-color: rgb(173, 240, 177); */
+}
+span
+{
+	
+	font-size:12px;
+	color:red;
+}
+
+</style>
+
+<script>
+function check()
+{
+var account=bal.anum.value;
+var Name=bal.name.value;
+var Password=bal.psw.value;
+
+if(account=="")
+	{
+	document.getElementById("ano").innerHTML="*please enter account number";
+	document.bal.anum.focus();
+	return false;
+	}
+	
+if(Name.length<1)
+{
+document.getElementById("nm").innerHTML="*please enter your name";
+document.bal.name.focus();
+return false;
+}
+if(Password=="")
+{
+document.getElementById("pass").innerHTML="*please enter password";
+document.bal.psw.focus();
+return false;
+}
+
+else
+	{
+	return true;
+	}
+}
+</script>
+</head>
+<body>
+
+<div>
+<a href="home.html"><img src="./images/home.png" alt="image not loaded"  height="18" width="18"></a>
+<!-- <a href="newaccount.html">New Account</a> -->
+<a href="balance.html">Balance</a>
+<a href="deposit.html">Deposit</a>
+<a href="withdraw.html">Withdraw</a>
+<a href="transfer.html">Transfer</a>
+<a href="closeacc.html">Close A/C</a>
+<a href="activate.html">Activate A/C</a>
+<a href="feedbackuser.html">Feedback</a>
+<!-- <a href="about.html">AboutUS</a> -->
+</div>
+<h1>BALANCE FORM</h1>
+<form action="Balance" method="post" name="bal" onsubmit="return check()">
+<label>Account Number:</label>
+<input type="text" name="anum"/>
+<span id="ano"></span><p></p>
+
+<label>Name:</label>
+<input type="text" name="name"/>
+<span id="nm"></span><p></p>
+
+<label>Password:</label>
+<input type="password" name="psw"/>
+<span id="pass"></span><p></p>
+
+<label></label>
+<input type="submit" value="Submit">
+<input class="btn" type="reset" value="Clear">
+</form>
+</body>
+</html>

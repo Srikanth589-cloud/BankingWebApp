@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+form
+{
+margin:auto;
+width:600px;
+border:1px solid;
+padding:40px;
+background-image: linear-gradient(rgb(232, 159, 240),rgb(143, 116, 224));
+}
+label
+{
+display:block;
+width:400px;
+margin-top:50px;
+
+}
+
+.link
+{
+	display:flex;
+	justify-content:space-between;
+	background-color: rgb(18, 17, 18);
+	padding:15px 450px;
+	gap:10px;
+}
+
+.link a:hover
+{
+
+border-radius:7px;
+/* border:1px solid; */
+background-color: rgb(78, 80, 80);
+}
+a
+{
+	color:white;
+	text-decoration:none;
+	padding:5px 10px;
+	transition:0.2s all;
+}
+.icon
+{
+	
+	margin-left:270px;
+}
+span
+{
+	display:inline-block;
+	height:6px;
+	width:70px;
+	background-color: rgb(28, 209, 222);
+}
+
+footer
+{
+background-color:black;
+padding:20px;
+}
+.footContainer
+{
+	color:white;
+	 
+    display:flex;
+	/* justify-content:space-between; */
+}
+
+.footContainer div
+{
+	 width:300px;
+	/* text-align:justify; */
+	padding:10px;
+}
+
+.btn
+{
+border:1px solid;
+border-radius:7px;
+padding:7px;
+width:250px;
+background-color: rgb(133, 201, 243);
+margin-top:50px;
+/* align-items: center; */
+
+}
+.head
+{
+border:1px solid;
+padding:20px;
+color:white;
+background-color: rgb(28, 172, 177);
+margin-bottom:20px;
+
+}
+.middleSec
+{
+width:700px;
+margin:auto;
+padding:30px;
+background-color: rgb(224, 246, 247);
+}
+.mainSec
+{
+width:950px;
+margin:auto;
+margin-top:50px;
+margin-bottom:20px;
+padding:30px;
+background-color: rgb(222, 225, 225);
+}
+
+</style>
+</head>
+<body>
+<div class="icon">
+<img class="icon" src="./images/about.png" height="60" width="80" alt="image not loaded">
+<h1>SME Development Finance Corporation Private Limited</h1>
+</div>
+<div class="link">
+<a href="home.html"><img class="home" src="./images/home.png" alt="image not loaded"  height="18" width="18"></a>
+<!-- <a href="newaccount.html">New Account</a>
+<a href="balance.html">Balance</a>
+<a href="deposit.html">Deposit</a>
+<a href="withdraw.html">Withdraw</a>
+<a href="transfer.html">Transfer</a>
+<a href="closeacc.html">Close A/C</a>
+<a href="activate.html">Activate A/C</a> -->
+<a href="about.html">AboutUS</a>
+</div>
+<section class="mainSec">
+<h1>FEEDBACK</h1>
+<span></span>
+<section class="middleSec">
+<form action="FeedbackCode" method="post">
+<div class="head">
+<h1><b>Feedback or Complaints</b></h1><p></p>
+<p>Please complete the form below to make a complaint or to give us
+ feedback on any of our products and services</p><p></p>
+ </div>
+ <label>1. Is this a Feedback or Complaint *</label>
+ <select name="feed">
+ <option>Select </option>
+ <option>I would like to give feedback.</option>
+ <option>I would like to make a complaint.</option>
+ </select><p></p>
+ 
+ <label>2. Details *</label>
+ <select name="details">
+ <option>Select</option>
+ <option>Loan Application</option>
+ <option>Loan Products</option>
+ <option>Services</option>
+ <option>Customer Portal</option>
+ </select><p></p>
+ 
+ <label>3. Your Full Name</label>
+ <input type="text" name="name" size="40" placeholder="Enter your name"><p></p>
+ 
+ <label>4. Enter Your Email *</label>
+ <input type="eamil" name="mail" size="40" placeholder="Enter your email"><p></p>
+ 
+ <label>5. Mobile No. *</label>
+ <input type="text" name="mobile" size="40" placeholder="Enter your mobile number"><p></p>
+ 
+ <label>6. Comments on feedback or complaint</label>
+ <input type="text" name="com" size="40" placeholder="Write your feedback or complaints"><p></p>
+ 
+ <label>7. Are you a SDFC customer? *</label>
+ <input type="radio" name="op" value="yes">Yes<br>
+ <input type="radio" name="op" value="no">No 
+ 
+ <label></label>
+ <input type="submit" value="Submit">
+</form>
+
+</section>
+<p> <b>Disclaimer:</b> The information provided above will be used to respond to your inquiry 
+    or contact you if necessary; it will not be used for any other purpose or shared with a
+    third party.</p>
+ </section>
+<footer>
+<div class="footContainer">
+<div>
+<h3>Contact Us</h3>
+<span></span>
+<p>7070963414</p>
+
+</div>
+
+<div>
+<h3>Find Us</h3>
+<span></span>
+<p>Kiran Reddy Hostel,1st Floor<br>500038, SR Nagar<br>Street No.6</p>
+</div>
+</div>
+<div style="color:white">
+<h3>Email</h3>
+<span></span>
+<p>For general queries related to our loan<br> products and services contact us at</p>
+<p><a href="mailto:rahulmjh2000@gmail.com"><h3 >rahulmjh2000@gmail.com</h3></a></p>
+
+<p>For official communications and <br>general queries contact us at</p>
+<p><a href="mailto:rahulchuarsiya619@gmail.com"><h3>rahulchuarsiya619@gmail.com</h3></a></p>
+</div>
+<div class="btn">
+<a  href="feedback.html"><img class="home" src="./images/thumb.png" alt="image not loaded"  height="20" width="20">&emsp;FeedBack And Complaints</a><br>
+</div>
+
+<div class="btn">
+<a  href="whistleblower.html"><img class="home" src="./images/whistle.png" alt="image not loaded"  height="18" width="18">&emsp;WHISTLEBLOWER</a>
+
+</div>
+<p style="color:white; margin-top:50px;">2024 © SME Development Finance Corporation All Rights Reserved.</p>
+</footer>
+</body>
+</html>

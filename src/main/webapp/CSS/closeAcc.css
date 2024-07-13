@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body
+{
+	
+	margin:auto;
+	margin-top:30px;
+	/* width:600px; */
+	padding:40px;
+	/* border:1px solid; */
+	background-color: rgb(247, 234, 197);
+}
+h1
+{
+	background-color: rgb(208, 215, 216);
+	text-align:center;
+	border-radius:17px;
+	width:545px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+div
+{
+	display:flex;
+	justify-content:space-between;
+	background-color: rgb(18, 17, 18);
+	padding:20px;
+	gap:10px;
+	border:1px solid;
+}
+label
+{
+	display:inline-block;
+	width:150px;
+}
+.btn
+{
+	margin-left:60px;
+}
+a
+{
+	text-decoration:none;
+	color:white;
+}
+form
+{
+	border:1px solid;
+	padding:20px;
+	margin:auto;
+	width:500px;
+	background-color: rgb(225, 250, 166);
+}

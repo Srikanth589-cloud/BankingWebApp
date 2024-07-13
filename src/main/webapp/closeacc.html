@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="./CSS/closeAcc.css" rel="stylesheet">
+
+<style type="text/css">
+
+@charset "UTF-8";
+body
+{
+	
+	margin:auto;
+	margin-top:30px;
+	/* width:600px; */
+	padding:40px;
+	/* border:1px solid; */
+	/* background-color: rgb(247, 234, 197); */
+background-image: url('./images/close.avif');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+h1
+{
+	background-color: rgb(208, 215, 216);
+	text-align:center;
+	border-radius:17px;
+	width:545px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+div
+{
+	display:flex;
+	justify-content:space-between;
+	background-color: rgb(18, 17, 18);
+	padding:20px;
+	gap:10px;
+	border:1px solid;
+}
+label
+{
+	display:inline-block;
+	width:150px;
+}
+.btn
+{
+	margin-left:60px;
+}
+div a:hover
+{
+
+border-radius:7px;
+/* border:1px solid; */
+background-color: rgb(78, 80, 80);
+}
+
+a
+{
+	color:white;
+	text-decoration:none;
+	padding:5px 10px;
+	transition:0.2s all;
+}
+form
+{
+	border:1px solid;
+	padding:20px;
+	margin:auto;
+	width:500px;
+	background-color: rgb(225, 250, 166);
+}
+</style>
+</head>
+<body>
+<div>
+<a href="home.html"><img src="./images/home.png" alt="image not loaded"  height="18" width="18"></a>
+<!-- <a href="newaccount.html">New Account</a> -->
+<a href="balance.html">Balance</a>
+<a href="deposit.html">Deposit</a>
+<a href="withdraw.html">Withdraw</a>
+<a href="transfer.html">Transfer</a>
+<a href="closeacc.html">Close A/C</a>
+<a href="activate.html">Activate A/C</a>
+<a href="feedbackuser.html">Feedback</a>
+<!-- <a href="about.html">AboutUS</a> -->
+</div>
+<h1>CLOSE ACCOUNT FORM</h1>
+<form action="Close" method="post">
+<label>Account Number:</label>
+<input type="text" name="anum"><p></p>
+
+<label>Name:</label>
+<input type="text" name="name"><p></p>
+
+<label>Password:</label>
+<input type="password" name="psw"><p></p>
+
+
+<label></label>
+<input type="submit" value="Deactivate">
+<input class="btn" type="reset" value="Clear">
+</form>
+</body>
+</html>
